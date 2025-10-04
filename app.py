@@ -38,7 +38,7 @@ all_felder_cols_df = pd.DataFrame(0, index=[0], columns=expected_felder_cols)
 all_felder_cols_df[f'Felder_{selected_felder}'] = 1
 
 # Concatenate the scaled numerical feature and the one-hot encoded Felder features
-processed_user_data = pd.concat([examen_admision_scaled_user_df, all_felder_cols_df], axis=1)
+processed_user_data = pd.concat([all_felder_cols_df,examen_admision_scaled_user_df], axis=1)
 
 
 # Make a prediction
