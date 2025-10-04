@@ -4,9 +4,9 @@ import joblib
 import numpy as np
 
 # Load the saved model and preprocessing objects
-model = joblib.load('/content/drive/MyDrive/AnaliticaPredictiva/DespliegueClasificacion/best_bagging_lr_model.pkl')
-onehot_encoder = joblib.load('/content/drive/MyDrive/AnaliticaPredictiva/DespliegueClasificacion/onehot_encoder.pkl')
-standard_scaler = joblib.load('/content/drive/MyDrive/AnaliticaPredictiva/DespliegueClasificacion/minmax_scaler.pkl')
+model = joblib.load('best_bagging_lr_model.pkl')
+onehot_encoder = joblib.load('onehot_encoder.pkl')
+standard_scaler = joblib.load('minmax_scaler.pkl')
 
 st.title("Course Approval Prediction")
 st.write("Enter the student's information to predict course approval.")
